@@ -1,0 +1,240 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  padding: 0 192px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 375px) {
+  .container {
+    max-width: 375px;
+    padding: 0 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding: 0 65px;
+  }
+}
+body {
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+  background-color: #080808;
+  color: white;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+button {
+  cursor: pointer;
+  font-family: inherit;
+  color: currentColor;
+}
+h1 {
+  font-weight: 600;
+}
+
+p {
+  font-weight: 500;
+}
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul,
+ol {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+picture {
+  flex-shrink: 0;
+  max-width: 100%;
+}
+input {
+  font-family: inherit;
+}
+
+.hidden {
+  display: none;
+}
+.header {
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  z-index: 5;
+  padding: 64px 0;
+}
+.logo {
+  font-size: 42px;
+  color: white;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.logo:hover {
+  transform: scale(1.1);
+}
+.logo span {
+  text-shadow: 0 0 25px;
+  color: #00ffee;
+}
+.header-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+}
+.nav-list a {
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+.nav-list a:hover,
+.nav-list.active {
+  color: #00ffee;
+  border-bottom: 3px solid #00ffee;
+}
+#menu-icon {
+  font-size: 3.6rem;
+  color: #00ffee;
+  display: none;
+}
+.home {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 60px;
+}
+
+.home-top-thumb {
+  display: flex;
+  justify-content: space-between;
+}
+.home-content {
+  display: flex;
+  flex-direction: column;
+}
+.span {
+  color: #00ffee;
+}
+.logo span {
+  color: #00ffee;
+}
+.home-content h3 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.home-content h1 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+.home img {
+  border-radius: 10%;
+  box-shadow: 0 0 25px #00ffee;
+}
+.home-img img {
+  height: auto;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+.home-img img:hover {
+  box-shadow: 0 0 25px #00ffee, 0 0 50px #00ffee, 0 0 100px #00ffee;
+}
+.home-content p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.8;
+  max-width: 1000px;
+}
+.home-bottom-thumb {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.social-icons-list {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+}
+.social-icons-list a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 4.5rem;
+  height: 4.5rem;
+  background: transparent;
+  border: 2px solid #00ffee;
+  font-size: 2.5rem;
+  border-radius: 50%;
+  color: #00ffee;
+  margin: 3rem 1.5rem 3rem 0;
+  transition: 0.3s ease-in-out;
+}
+.social-icons-list a:hover {
+  color: white;
+  transform: scale(1.3) translateY(-5px);
+  box-shadow: 0 0 25px #00ffee;
+  background-color: #00ffee;
+}
+.btn {
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background: #00ffee;
+  box-shadow: 0 0 25px #00ffee;
+  border-radius: 4rem;
+  font-size: 1.6rem;
+  color: black;
+  border: 2px solid transparent;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 50px #00ffee;
+}
+.btn-group {
+  display: flex;
+  align-items: center;
+  gap: 180px;
+}
+.btn-group a:nth-of-type(2) {
+  background-color: black;
+  color: #00ffee;
+  border: 2px solid #00ffee;
+  box-shadow: 0 0 25px transparent;
+}
+.btn-group a:nth-of-type(2):hover {
+  box-shadow: 0 0 25px #00ffee;
+  background-color: #00ffee;
+  color: black;
+}
